@@ -14,17 +14,16 @@ const School = (props) => {
    <div>
             { props.school ? (
         <Card >
-                    <CardMedia style={{height: 0, paddingTop: '56.25%'}}
+                    <CardMedia style={{height: 50, paddingTop: '56.25%',alt: 'image of school'}}
                     image={props.school.fields.schoollogo}
-                    name={props.school.fields.schoollogo}
+                    name={props.school.fields.url}
                     />
                     <CardContent>
-                
                     <Typography gutterBottom variant="headline" component="p">
                         {props.school.fields.url}
                     </Typography>
                     <Typography component="p">
-                        {props.school.fields.url}
+                       
                     </Typography>
                     </CardContent>
                     <CardActions>
